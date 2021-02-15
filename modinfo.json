@@ -4,7 +4,7 @@
     "ident": "crux",
     "name": "Crusader Industries",
     "authors": [ "Bogatyr68" ],
-    "description": "Two new weapon families for a slightly more sci-fi, Fallout feel. See the readme for full details.",
+    "description": "Two new weapon families for a slightly more sci-fi, Fallout feel. See the readme for full details. Most recent confirmed build: 11203, late 2020.",
     "category": "content",
     "dependencies": [ "dda" ]
   }
