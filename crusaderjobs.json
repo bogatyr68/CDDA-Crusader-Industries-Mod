@@ -1,0 +1,75 @@
+[
+{
+	"type": "item_group",
+	"subtype": "collection",
+	"id": "crux_laser_pistol_ammoset",
+	"entries":
+		[
+			{ "item": "crux_battery_small", "ammo-item": "battery", "charges": 10 },
+			{ "item": "crux_battery_small", "ammo-item": "battery", "charges": 10 }
+		]
+},
+{
+	"type": "item_group",
+	"subtype": "collection",
+	"id": "crux_laser_rifle_ammoset",
+	"entries":
+		[
+			{ "item": "crux_battery", "ammo-item": "battery", "charges": 15 },
+			{ "item": "crux_battery", "ammo-item": "battery", "charges": 15 },
+			{ "item": "crux_battery", "ammo-item": "battery", "charges": 15 },
+			{ "item": "crux_battery", "ammo-item": "battery", "charges": 15 }
+		]
+},
+{
+	"type": "profession",
+	"ident": "laser_test_soldier",
+	"name": "Prototype Military Contractor",
+	"description": "You were an experienced soldier at first, then moved into a PMC. From there, you managed to get an interesting contract testing some interesting new prototypes. No one has heard from the engineers, but at least you have some useful gear.",
+	"points": 6,
+	"skills":
+	[
+		{ "level": 2, "name": "gun" },
+		{ "level": 1, "name": "rifle" },
+		{ "level": 2, "name": "melee" },
+		{ "level": 1, "name": "stabbing" },
+		{ "level": 1, "name": "dodge" },
+		{ "level": 1, "name": "pistol" }
+	],
+	"items":
+	{
+		"both":
+		{
+			"items":
+			[
+				"pants_army",
+				"undershirt",
+				"jacket_army",
+				"ballistic_vest_esapi",
+				"helmet_army",
+				"mask_ski",
+				"gloves_liner",
+				"gloves_tactical",
+				"socks",
+				"boots_combat",
+				"wristwatch",
+				"molle_pack",
+				"canteen"
+			],
+			"entries":
+			[
+				{ "group": "charged_two_way_radio" },
+				{ "item": "legpouch_large", "contents-group": "crux_laser_pistol_ammoset" },
+				{ "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+				{ "item": "knife_combat", "container-item": "sheath" },
+				{ "item": "crux_laser_rifle", "ammo-item": "battery", "charges": 15, "contents-item": [ "shoulder_strap" ] },
+				{ "item": "crux_laser_pistol", "ammo-item": "battery", "charges": 10, "container-item": "holster" },
+				{ "item": "tacvest", "contents-group": "crux_laser_rifle_ammoset" },
+				{ "item": "mil_mess_kit", "ammo-item": "battery", "charges": 600 }
+			]
+		},
+		"male": [ "boxer_shorts" ],
+		"female": [ "sports_bra", "boy_shorts" ]
+	}
+}
+]

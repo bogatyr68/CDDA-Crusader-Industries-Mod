@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "crux",
+    "name": "Crusader Industries",
+    "authors": [ "Bogatyr68" ],
+    "description": "Two new weapon families for a slightly more sci-fi, Fallout feel. See the readme for full details.",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+]

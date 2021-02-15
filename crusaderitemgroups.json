@@ -1,0 +1,20 @@
+[
+{	"type": "item_group",
+	"id": "science",
+	"items": [ ["crux_laser_book", 20 ], [ "crux_plasma_book", 20] ]
+},
+{	"type": "item_group",
+	"id": "textbooks",
+	"items": [ ["crux_laser_book", 20 ], [ "crux_plasma_book", 20 ] ]
+},
+{
+	"type": "item_group",
+	"id": "electronics",
+	"items": [ ["crux_laser_book", 20 ] ]
+},
+{
+	"type": "item_group",
+	"id": "lab_bookshelves",
+	"items": [ ["crux_laser_book", 20 ], ["crux_plasma_book", 20 ] ]
+}
+]

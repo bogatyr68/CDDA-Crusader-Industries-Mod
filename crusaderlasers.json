@@ -1,0 +1,319 @@
+[
+{
+	"id": "crux_battery_large",
+	"type": "MAGAZINE",
+	"copy-from": "crux_battery",
+	"name": "CRUX Macro-Cell",
+	"description": "An oversized battery pack, this was intended for use by infantry using the laser cannon, as it cannot draw from an external battery source.",
+	"weight": "150 g",
+	"volume": "400 ml",
+	"capacity": 50,
+	"flags": [ "NO_SALVAGE", "NO_UNLOAD", "RECHARGE", "MAG_COMPACT", "TRADER_AVOID" ],
+	"pocket_data": [{ "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 50 } } ]
+},	
+{
+	"id": "crux_battery",
+	"type": "MAGAZINE",
+	"name": "CRUX Cell",
+	"description": "Crusader Industries cell for use with Crusader Industries' line of laser weapons. Fortuantely, it can be recharged. Unfortunately, useless for all other purposes.",
+	"weight": "350 g",
+	"volume": "300 ml",
+	"price": 3000,
+	"price_postapoc": 50,
+	"material": [ "steel", "plastic" ],
+	"symbol": "=",
+	"color": "yellow",
+	"ammo_type": [ "battery" ],
+	"capacity": 15,
+	"looks_like": "battery",
+	"flags": [ "NO_SALVAGE", "NO_UNLOAD", "RECHARGE", "MAG_COMPACT", "TRADER_AVOID" ],
+	"pocket_data": [{ "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 15 } } ]
+},
+{
+	"id": "crux_battery_small",
+	"type": "MAGAZINE",
+	"copy-from": "crux_battery",
+	"name": "CRUX Mini-Cell",
+	"description": "This is a smaller charge cell for Crusader's handguns, but it can also be used on the larger weapons.",
+	"weight": "100 g",
+	"volume": "250 ml",
+	"price": 2500,
+	"price_postapoc": 25,
+	"capacity": 10,
+	"pocket_data": [{ "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 10 } } ]
+},
+{
+	"id": "crux_battery_micro",
+	"type": "MAGAZINE",
+	"copy-from": "crux_battery",
+	"name": "CRUX Micro-Cell",
+	"description": "Crusader Industries designed this cell for use with their supplementary weapons, namely, underslung pistols. Because of the small size of those weapons, these cannot fit into the rifles or carbines.",
+	"weight": "50 g",
+	"volume": "250 ml",
+	"price": 2500,
+	"price_postapoc": 25,
+	"capacity": 5,
+	"pocket_data": [{ "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 5 } } ]
+},
+{
+	"type": "GUN",
+	"id": "crux_laser_rifle",
+	"name": {"str": "CRUX Laser Rifle" },
+	"color": "blue",
+	"symbol": "[",
+	"looks_like": "m4a1",
+	"description": "Neither a rifle nor a laser, this weapon fires bolts of cohesive light at a target. With good range and accuracy, these prototype weapons could have a long service life ahead of them.",
+	"weight": "3 kg",
+	"//": "longest_side 1200 mm",
+	"volume": "3 L",
+	"rigid": true,
+	"price": 3000,
+	"price_post": "3000",
+	"material": ["steel", "plastic"],
+	"bashing": 8,
+	"to_hit": -1,
+	"flags": ["DURABLE_MELEE", "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "TRADER_AVOID"],
+	"ammo_effects": [ "LASER", "INCENDIARY" ],
+	"skill": "rifle",
+	"ammo": [ "battery" ],
+	"pocket_data": 
+	[
+		{
+			"pocket_type": "MAGAZINE_WELL",
+			"holster": true,
+			"max_contains_volume": "20 L",
+			"max_contains_weight": "20 kg",
+			"item_restriction": [ "crux_battery", "crux_battery_small" ]
+		}
+	],
+	"ranged_damage": { "damage_type": "heat", "amount": 50},
+	"range": 90,
+	"dispersion": 32,
+	"aim_speed": 3,
+	"recoil": 1000,
+	"durability": 8,
+	"min_cycle_recoil": 0,
+	"burst": 1,
+	"clip_size": 300,
+	"ups_charges": 0,
+	"reload": 20,
+	"barrel_volume": "0 L",
+	"holster": true,
+	"valid_mod_locations":
+	[
+		[ "accessories", 4 ],
+		[ "emitter", 1],
+		[ "lens", 1],
+		[ "grip", 1 ],
+		[ "mechanism", 4 ],
+		[ "rail", 2 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "underbarrel", 1 ],
+		[ "sling", 1 ]
+	]
+},
+{
+	"id": "crux_laser_carbine",
+	"type": "GUN",
+	"copy-from": "crux_laser_rifle",
+	"name": { "str": "CRUX Laser Carbine" },
+	"description": "This is a smaller, carbine version of the Crusader Industries Laser Rifle. Still not a laser, but actually a carbine, so the name is slightly more accurate.",
+	"weight": "2 kg",
+	"volume": "1760 ml",
+	"//": "longest_side 1000 mm",
+	"ranged_damage": { "damage_type": "heat", "amount": 35 },
+	"range": 70,
+	"modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "3 rd.", 3 ] ]
+
+},
+{
+	"id": "crux_laser_pistol",
+	"type": "GUN",
+	"copy-from": "crux_laser_rifle",
+	"name": { "str": "CRUX Laser Pistol" },
+	"description": "Crusader Industries' take on the sidearm. Accurate and powerful, its only downside is that its charge cell has very few shots compared to other sidearms.",
+	"skill": "pistol",
+	"looks_like": "glock_17",
+	"weight": "750 g",
+	"volume": "500 ml",
+	"pocket_data": 
+	[
+		{
+			"pocket_type": "MAGAZINE_WELL",
+			"holster": true,
+			"max_contains_volume": "20 L",
+			"max_contains_weight": "20 kg",
+			"item_restriction": [ "crux_battery_small" ]
+		}
+	],
+	"ranged_damage": { "damage_type": "heat", "amount": 15 },
+	"range": 10,
+	"valid_mod_locations": 
+	[
+		[ "accessories", 2 ],
+		[ "grip", 1 ],
+		[ "mechanism", 4 ],
+		[ "rail", 1 ],
+		[ "sights", 1 ],
+		[ "stock", 1 ],
+		[ "underbarrel", 1 ],
+		[ "emitter", 1],
+		[ "lens", 1]
+	]
+},
+{
+	"type": "GUN",
+	"id": "crux_laser_cannon",
+	"name": {"str": "CRUX Laser Cannon" },
+	"color": "blue",
+	"symbol": "[",
+	"looks_like": "m249",
+	"description": "Drawing on vehicle power, the Crusader Industries cannon can provide a near limitless barrage of shots, so long as the host vehicle itself can maintain its power demand. An integrated failsafe assures that the host vehicle will not be disabled due to this power draw.",
+	"weight": "15 kg",
+	"//": "longest_side 1200 mm",
+	"volume": "10 L",
+	"rigid": true,
+	"price": 3000,
+	"price_post": "3000",
+	"material": ["steel", "plastic"],
+	"bashing": 8,
+	"to_hit": -1,
+	"flags": ["DURABLE_MELEE", "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "MOUNTED_GUN", "TRADER_AVOID"],
+	"ammo_effects": [ "LASER", "INCENDIARY" ],
+	"skill": "rifle",
+	"ammo": [ "battery" ],
+	"pocket_data": 
+	[
+		{
+			"pocket_type": "MAGAZINE",
+			"ammo_restriction": { "battery": 50 }
+		}
+	],
+	"ranged_damage": { "damage_type": "heat", "amount": 80},
+	"range": 90,
+	"dispersion": 75,
+	"recoil": 750,
+	"durability": 8,
+	"min_cycle_recoil": 0,
+	"modes": [ [ "AUTO", "auto", 4 ] ],
+	"clip_size": 2500,
+	"barrel_volume": "0 L",
+	"valid_mod_locations":
+	[
+		[ "accessories", 4 ],
+		[ "emitter", 1],
+		[ "lens", 1],
+		[ "grip", 1 ],
+		[ "mechanism", 4 ],
+		[ "rail", 2 ],
+		[ "sights", 1 ],
+		[ "sling", 1 ],
+		[ "stock", 1 ],
+		[ "underbarrel", 1 ]
+	]
+},
+{
+	"id": "crux_laser_cannon_foot",
+	"name": "infantry CRUX Laser Cannon",
+	"copy-from": "crux_laser_cannon",
+	"skill": "rifle",
+	"color": "blue",
+	"symbol": "[",
+	"type": "GUN",
+	"description": "Almost exactly identical to the vehicle-mounted cannon, this one is a variation that is intended to be used by infantry on the move. Even so, it is too unwieldy to fire without the proper support.",
+	"pocket_data": 
+	[
+		{
+			"pocket_type": "MAGAZINE_WELL",
+			"holster": true,
+			"max_contains_volume": "20 L",
+			"max_contains_weight": "20 kg",
+			"item_restriction": [ "crux_battery_large" ]
+		}
+	]
+},	
+{
+	"id": "crux_underslung_pistol",
+	"type": "GUNMOD",
+	"name": { "str": "CRUX Micro Pistol" },
+	"description": "Crusader Industries sought to add versatility to weapons like sniper rifles by adding this close-quarters supplementary underbarrel weapon.",
+	"symbol": "=",
+	"color": "yellow",
+	"material": ["steel", "plastic"],
+	"min_skill": [ [ "weapon", 2], [ "pistol", 1 ] ],
+	"location": "underbarrel",
+	"mod_targets": [ "rifle", "crossbow", "smg", "launcher", "pistol" ],
+	"install_time": "45 s",
+	"weight": "250 g",
+	"volume": "500 ml",
+	"rigid": true,
+	"bashing": 4,
+	"to_hit": -1,
+	"pocket_data": 
+	[
+		{
+			"pocket_type": "MAGAZINE_WELL",
+			"holster": true,
+			"max_contains_volume": "20 L",
+			"max_contains_weight": "20 kg",
+			"item_restriction": [ "crux_battery_micro" ]
+		}
+	],
+	"gun_data":
+		{
+		"ammo": "battery",
+		"skill": "pistol",
+		"dispersion": 32,
+		"durability": 6,
+		"clip_size": 5,
+		"range": 5,
+		"ranged_damage": { "damage_type": "heat", "amount": 15 },
+		"reload": 150,
+		"recoil": 1000,
+		"burst": 1,
+		"flags": ["DURABLE_MELEE", "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "TRADER_AVOID"],
+		"ammo_effects": [ "LASER", "INCENDIARY" ]
+	}
+},
+{
+	"id": "crux_hyperbeam",
+	"type": "GUNMOD",
+	"name": { "str": "CRUX Hyperbeam Pack" },
+	"description": "Mounted on the side of a weapon, this effectively allows the Crusader weapon to fire full-auto.",
+	"weight": "200 g",
+	"volume": "250 ml",
+	"price": 65000,
+	"price_postapoc": 500,
+	"material": [ "plastic", "steel", "copper" ],
+	"symbol": ":",
+	"color": "red",
+	"location": "rail",
+	"mod_targets": [ "crux_laser_rifle", "crux_laser_carbine", "crux_laser_pistol"],
+	"install_time": "1 m",
+	"dispersion_modifier": 10,
+	"mode_modifier": [ [ "AUTO", "auto", 4 ] ],
+	"min_skills": [ [ "weapon", 2 ], [ "electronics", 3 ] ]
+},
+{
+	"id": "crux_oversize",
+	"type": "GUNMOD",
+	"name": { "str": "CRUX Oversize Battery Pack" },
+	"description": "A reconfiguration of the magazine feed allows the weapon to fit the larger Macro-Cell.",
+	"weight": "200 g",
+	"volume": "250 ml",
+	"price": 65000,
+	"price_postapoc": 500,
+	"material": [ "plastic", "steel", "copper" ],
+	"symbol": ":",
+	"color": "red",
+	"location": "rail",
+	"mod_targets": [ "crux_laser_rifle", "crux_laser_carbine" ],
+	"install_time": "5 m",
+	"dispersion_modifier": 10,
+	"ammo_modifier": [ "battery" ],
+	"magazine_adaptor": [ [ "battery", [ "crux_battery_large" ] ] ],
+	"min_skills": [ [ "weapon", 2 ], [ "electronics", 3 ] ]
+}
+]

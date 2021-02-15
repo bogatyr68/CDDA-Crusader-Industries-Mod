@@ -1,0 +1,989 @@
+[
+{
+	"result": "crux_battery",
+	"type": "recipe",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_MAGAZINES",
+	"skill_used": "electronics",
+	"difficulty": 3,
+	"skills_required": [ ["fabrication", 3], ["electronics", 3] ],
+	"time": "30 m",
+	"reversible": true,
+	"decomp_learn": 2,
+	"book_learn": [ [ "crux_laser_book", 2 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking"} ],
+	"using": [ [ "soldering_standard", 10 ], [ "surface_heat", 50 ] ],
+	"qualities": [ { "id": "SCREW", "level": 1 }, {"id": "SCREW_FINE", "level": 1} ],
+	"tools": [ [ [ "mold_plastic", -1 ] ] ],
+	"components":
+	[
+		[ [ "plastic_chunk", 20 ] ],
+		[ [ "scrap", 4 ] ],
+		[ [ "lead", 5000 ] ],
+		[ [ "acid", 4 ], [ "fertilizer_liquid", 4 ], [ "fertilizer_commercial", 4 ] ]
+	]
+},
+{
+	"result": "crux_battery_large",
+	"type": "recipe",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_MAGAZINES",
+	"skill_used": "electronics",
+	"difficulty": 3,
+	"skills_required": [ ["fabrication", 3], ["electronics", 3] ],
+	"time": "30 m",
+	"reversible": true,
+	"decomp_learn": 2,
+	"book_learn": [ [ "crux_laser_book", 2 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking"} ],
+	"using": [ [ "soldering_standard", 10 ], [ "surface_heat", 50 ] ],
+	"qualities": [ { "id": "SCREW", "level": 1 }, {"id": "SCREW_FINE", "level": 1} ],
+	"tools": [ [ [ "mold_plastic", -1 ] ] ],
+	"components":
+	[
+		[ [ "plastic_chunk", 24 ] ],
+		[ [ "scrap", 6 ] ],
+		[ [ "lead", 6000 ] ],
+		[ [ "acid", 6 ], [ "fertilizer_liquid", 6 ], [ "fertilizer_commercial", 6 ] ]
+	]
+},
+{
+	"result": "crux_battery_small",
+	"type": "recipe",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_MAGAZINES",
+	"skill_used": "electronics",
+	"difficulty": 3,
+	"skills_required": [ ["fabrication", 3], ["electronics", 3] ],
+	"autolearn": false,
+	"time": "25 m",
+	"reversible": true,
+	"decomp_learn": 2,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking"} ],
+	"book_learn": [ [ "crux_laser_book", 2 ] ],
+	"using": [ [ "soldering_standard", 10 ], [ "surface_heat", 50 ] ],
+	"qualities": [ { "id": "SCREW", "level": 1 }, {"id": "SCREW_FINE", "level": 1} ],
+	"tools": [ [ [ "mold_plastic", -1 ] ] ],
+	"components":
+	[
+		[ [ "plastic_chunk", 15 ] ],
+		[ [ "scrap", 3 ] ],
+		[ [ "lead", 4500 ] ],
+		[ [ "acid", 3 ], [ "fertilizer_liquid", 3 ], [ "fertilizer_commercial", 3 ] ]
+	]
+},
+{
+	"result": "crux_battery_micro",
+	"type": "recipe",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_MAGAZINES",
+	"skill_used": "electronics",
+	"difficulty": 3,
+	"skills_required": [ ["fabrication", 3], ["electronics", 3] ],
+	"autolearn": false,
+	"time": "20 m",
+	"reversible": true,
+	"decomp_learn": 2,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking" } ],
+	"book_learn": [ [ "crux_laser_book", 2 ] ],
+	"using": [ [ "soldering_standard", 10 ], [ "surface_heat", 50 ] ],
+	"qualities": [ { "id": "SCREW", "level": 1 }, {"id": "SCREW_FINE", "level": 1} ],
+	"tools": [ [ [ "mold_plastic", -1 ] ] ],
+	"components":
+	[
+		[ [ "plastic_chunk", 10 ] ],
+		[ [ "scrap", 2 ] ],
+		[ [ "lead", 4000 ] ],
+		[ [ "acid", 2 ], [ "fertilizer_liquid", 2 ], [ "fertilizer_commercial", 2 ] ]
+	]
+},
+{
+	"type": "recipe",
+	"result": "crux_laser_rifle",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "electronics",
+	"skills_required":
+		[
+		["fabrication", 7],
+		["electronics", 7],
+		["rifle", 4 ]
+		],
+	"difficulty": 5,
+	"time": "45 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_laser_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking"}, { "proficiency": "prof_laser_weapon" } ],
+	"using": [ [ "soldering_standard", 20 ], [ "surface_heat", 100 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 20 ] ],
+		[ [ "power_supply", 4 ] ],
+		[ [ "plastic_chunk", 16 ] ],
+		[ [ "circuit", 4 ] ],
+		[ [ "e_scrap", 16 ] ],
+		[ [ "amplifier", 4 ] ],
+		[ [ "spring", 1 ] ],
+		[ [ "steel_chunk", 4 ], [ "scrap", 12 ] ],
+		[ [ "lens", 4 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "crux_laser_carbine",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "electronics",
+	"skills_required":
+		[
+		["fabrication", 7],
+		["electronics", 7],
+		["rifle", 4 ]
+		],
+	"difficulty": 5,
+	"time": "30 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_laser_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking"}, { "proficiency": "prof_laser_weapon" } ],
+	"using": [ [ "soldering_standard", 15 ], [ "surface_heat", 75 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 15 ] ],
+		[ [ "power_supply", 3 ] ],
+		[ [ "plastic_chunk", 12 ] ],
+		[ [ "circuit", 3 ] ],
+		[ [ "e_scrap", 12 ] ],
+		[ [ "amplifier", 3 ] ],
+		[ [ "spring", 1 ] ],
+		[ [ "steel_chunk", 3 ], [ "scrap", 9 ] ],
+		[ [ "lens", 4 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "crux_laser_pistol",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "electronics",
+	"skills_required":
+		[
+		["fabrication", 7],
+		["electronics", 7],
+		["pistol", 4 ]
+		],
+	"difficulty": 5,
+	"time": "25 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_laser_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking"}, { "proficiency": "prof_laser_weapon" } ],
+	"using": [ [ "soldering_standard", 10 ], [ "surface_heat", 50 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 10 ] ],
+		[ [ "power_supply", 2 ] ],
+		[ [ "plastic_chunk", 8 ] ],
+		[ [ "circuit", 2 ] ],
+		[ [ "e_scrap", 8 ] ],
+		[ [ "amplifier", 2 ] ],
+		[ [ "spring", 1 ] ],
+		[ [ "steel_chunk", 2 ], [ "scrap", 6 ] ],
+		[ [ "lens", 2 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "crux_underslung_pistol",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_MODS",
+	"skill_used": "electronics",
+	"skills_required":
+		[
+		["fabrication", 7],
+		["electronics", 7],
+		["rifle", 4 ]
+		],
+	"difficulty": 3,
+	"time": "20 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_laser_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking"}, { "proficiency": "prof_laser_weapon" } ],
+	"using": [ [ "soldering_standard", 5 ], [ "surface_heat", 25 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 5 ] ],
+		[ [ "power_supply", 1 ] ],
+		[ [ "plastic_chunk", 4 ] ],
+		[ [ "circuit", 1 ] ],
+		[ [ "e_scrap", 4 ] ],
+		[ [ "amplifier", 1 ] ],
+		[ [ "spring", 1 ] ],
+		[ [ "steel_chunk", 1 ], [ "scrap", 4 ] ],
+		[ [ "lens", 2 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "crux_laser_cannon",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "electronics",
+	"skills_required":
+		[
+		["fabrication", 8],
+		["electronics", 8],
+		["rifle", 4 ]
+		],
+	"difficulty": 5,
+	"time": "45 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_laser_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking"}, { "proficiency": "prof_laser_weapon" } ],
+	"using": [ [ "soldering_standard", 20 ], [ "surface_heat", 125 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 30 ] ],
+		[ [ "power_supply", 6 ] ],
+		[ [ "plastic_chunk", 20 ] ],
+		[ [ "circuit", 5 ] ],
+		[ [ "e_scrap", 20 ] ],
+		[ [ "amplifier", 5 ] ],
+		[ [ "spring", 2 ] ],
+		[ [ "steel_chunk", 5 ], [ "scrap", 15 ] ],
+		[ [ "lens", 4 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "crux_laser_cannon_foot",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "electronics",
+	"skills_required":
+		[
+		["fabrication", 8],
+		["electronics", 8],
+		["rifle", 4 ]
+		],
+	"difficulty": 5,
+	"time": "45 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_laser_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking"}, { "proficiency": "prof_laser_weapon" } ],
+	"using": [ [ "soldering_standard", 20 ], [ "surface_heat", 125 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 30 ] ],
+		[ [ "power_supply", 6 ] ],
+		[ [ "plastic_chunk", 20 ] ],
+		[ [ "circuit", 5 ] ],
+		[ [ "e_scrap", 20 ] ],
+		[ [ "amplifier", 5 ] ],
+		[ [ "spring", 2 ] ],
+		[ [ "steel_chunk", 5 ], [ "scrap", 15 ] ],
+		[ [ "lens", 4 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "crux_laser_cannon_foot",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "electronics",
+	"id_suffix": "assembly",
+	"skills_required": [ ["electronics", 4 ] ],
+	"difficulty": 3,
+	"time": "5 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_laser_book", 6 ] ],
+	"autolearn": false,
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "HAMMER_FINE", "level": 1 }
+	],
+	"components": [ [ ["crux_laser_cannon", 1 ] ] ]
+},
+{
+	"type": "recipe",
+	"result": "crux_laser_cannon",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "electronics",
+	"id_suffix": "assembly",
+	"skills_required": [ ["electronics", 4 ] ],
+	"difficulty": 3,
+	"time": "5 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_laser_book", 6 ] ],
+	"autolearn": false,
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "HAMMER_FINE", "level": 1 }
+	],
+	"components": [ [ ["crux_laser_cannon_foot", 1 ] ] ]
+},
+{
+	"type": "recipe",
+	"result": "crux_hyperbeam",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_MODS",
+	"skill_used": "electronics",
+	"skills_required":[ ["electronics", 4] ],
+	"difficulty": 3,
+	"time": "25 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_laser_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking"}, { "proficiency": "prof_laser_weapon" } ],
+	"using": [ [ "soldering_standard", 5 ], [ "surface_heat", 25 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 5 ] ],
+		[ [ "power_supply", 1 ] ],
+		[ [ "plastic_chunk", 4 ] ],
+		[ [ "circuit", 1 ] ],
+		[ [ "e_scrap", 4 ] ],
+		[ [ "amplifier", 1 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "crux_oversize",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_MODS",
+	"skill_used": "electronics",
+	"skills_required":[ ["electronics", 4] ],
+	"difficulty": 3,
+	"time": "25 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_laser_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking"}, { "proficiency": "prof_laser_weapon" } ],
+	"using": [ [ "soldering_standard", 5 ], [ "surface_heat", 25 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 5 ] ],
+		[ [ "plastic_chunk", 4 ] ],
+		[ [ "circuit", 1 ] ],
+		[ [ "e_scrap", 4 ] ],
+		[ [ "amplifier", 1 ] ]
+		]
+},
+{
+	"result": "crux_plasma_micromag",
+	"type": "recipe",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_MAGAZINES",
+	"skill_used": "fabrication",
+	"difficulty": 3,
+	"skills_required": [ ["fabrication", 3] ],
+	"time": "15 m",
+	"reversible": true,
+	"decomp_learn": 2,
+	"book_learn": [ [ "crux_plasma_book", 2 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_plasticworking"} ],
+	"using": [ [ "soldering_standard", 10 ], [ "surface_heat", 50 ] ],
+	"qualities": [ { "id": "SCREW", "level": 1 }, {"id": "SCREW_FINE", "level": 1} ],
+	"tools": [ [ [ "mold_plastic", -1 ] ] ],
+	"components":
+	[
+		[ [ "plastic_chunk", 20 ] ],
+		[ [ "scrap", 4 ] ]
+	]
+},
+{
+	"result": "crux_plasma_mag",
+	"type": "recipe",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_MAGAZINES",
+	"skill_used": "fabrication",
+	"difficulty": 3,
+	"skills_required": [ ["fabrication", 3] ],
+	"time": "15 m",
+	"reversible": true,
+	"decomp_learn": 2,
+	"book_learn": [ [ "crux_plasma_book", 2 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_plasticworking"} ],
+	"using": [ [ "soldering_standard", 10 ], [ "surface_heat", 50 ] ],
+	"qualities": [ { "id": "SCREW", "level": 1 }, {"id": "SCREW_FINE", "level": 1} ],
+	"tools": [ [ [ "mold_plastic", -1 ] ] ],
+	"components":
+	[
+		[ [ "plastic_chunk", 25 ] ],
+		[ [ "scrap", 6 ] ]
+	]
+},
+{
+	"type": "recipe",
+	"result": "hybrid_plasma_cell",
+	"category": "CC_AMMO",
+	"subcategory": "CSC_AMMO_RIFLE",
+	"skill_used": "fabrication",
+	"skills_required":
+		[
+		["fabrication", 3],
+		["chemistry", 3]
+		],
+	"difficulty": 5,
+	"time": "15 m",
+	"charges": 5,
+	"reversible": true,
+	"book_learn": [ [ "crux_plasma_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_plasma_weapon"} ],
+	"using": [ [ "soldering_standard", 5 ], [ "surface_heat", 25 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1}
+
+	],
+	"components":
+		[
+		[ [ "cable", 5 ] ],
+		[ [ "power_supply", 1 ] ],
+		[ [ "plastic_chunk", 4 ] ],
+		[ [ "circuit", 1 ] ],
+		[ [ "e_scrap", 8 ] ],
+		[ [ "amplifier", 1 ] ],
+		[ [ "chem_muriatic_acid", 1 ] ],
+		[ [ "water_clean", 2 ] ],
+		[ [ "steel_chunk", 2 ], [ "scrap", 6 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "hybrid_plasma_cell",
+	"category": "CC_AMMO",
+	"subcategory": "CSC_AMMO_RIFLE",
+	"skill_used": "fabrication",
+	"id_suffix": "assembly",
+	"difficulty": 5,
+	"charges": 5,
+	"time": "15 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_plasma_book", 6 ] ],
+	"autolearn": false,
+	"batch_time_factors": [ 95, 5 ],
+	"proficiencies": [ { "proficiency": "prof_plasma_weapon"} ],
+	"using": [ [ "soldering_standard", 1 ], [ "surface_heat", 25 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1}
+
+	],
+	"components":
+		[
+		[ [ "hybrid_plasma_discharged", 5 ] ],
+		[ [ "plastic_chunk", 1 ] ],
+		[ [ "chem_muriatic_acid", 1 ] ],
+		[ [ "water_clean", 2 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "hybrid_plasma_microcell",
+	"category": "CC_AMMO",
+	"subcategory": "CSC_AMMO_RIFLE",
+	"skill_used": "fabrication",
+	"skills_required":
+		[
+		["fabrication", 3],
+		["chemistry", 3]
+		],
+	"difficulty": 5,
+	"time": "15 m",
+	"charges": 5,
+	"reversible": true,
+	"book_learn": [ [ "crux_plasma_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_plasma_weapon"} ],
+	"using": [ [ "soldering_standard", 5 ], [ "surface_heat", 25 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1}
+
+	],
+	"components":
+		[
+		[ [ "cable", 5 ] ],
+		[ [ "power_supply", 1 ] ],
+		[ [ "plastic_chunk", 2 ] ],
+		[ [ "circuit", 1 ] ],
+		[ [ "e_scrap", 4 ] ],
+		[ [ "amplifier", 1 ] ],
+		[ [ "chem_muriatic_acid", 1 ] ],
+		[ [ "water_clean", 1 ] ],
+		[ [ "steel_chunk", 1 ], [ "scrap", 3 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "hybrid_plasma_microcell",
+	"category": "CC_AMMO",
+	"subcategory": "CSC_AMMO_RIFLE",
+	"skill_used": "fabrication",
+	"skills_required":
+		[
+		["fabrication", 3],
+		["chemistry", 3]
+		],
+	"difficulty": 5,
+	"time": "15 m",
+	"charges": 5,
+	"reversible": true,
+	"book_learn": [ [ "crux_plasma_book", 6 ] ],
+	"autolearn": false,
+	"batch_time_factors": [ 95, 5 ],
+	"proficiencies": [ { "proficiency": "prof_plasma_weapon"} ],
+	"using": [ [ "soldering_standard", 1 ], [ "surface_heat", 25 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1}
+
+	],
+	"id_suffix": "assembly",
+	"components":
+		[
+		[ [ "hybrid_plasma_microdischarged", 5 ] ],
+		[ [ "plastic_chunk", 2 ] ],
+		[ [ "chem_muriatic_acid", 1 ] ],
+		[ [ "water_clean", 1 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "crux_plasma_jezzail",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "fabrication",
+	"skills_required":
+		[
+		["fabrication", 7],
+		["chemistry", 7],
+		["rifle", 4 ]
+		],
+	"difficulty": 5,
+	"time": "45 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_plasma_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies":
+	[
+		{ "proficiency": "prof_plasticworking" },
+		{ "proficiency": "prof_plasma_weapon" },
+		{ "proficiency": "prof_gunsmithing_basic" }
+	],
+	"using": [ [ "soldering_standard", 20 ], [ "surface_heat", 100 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 20 ] ],
+		[ [ "power_supply", 4 ] ],
+		[ [ "plastic_chunk", 16 ] ],
+		[ [ "circuit", 4 ] ],
+		[ [ "e_scrap", 16 ] ],
+		[ [ "amplifier", 4 ] ],
+		[ [ "spring", 1 ] ],
+		[ [ "steel_chunk", 8 ], [ "scrap", 24 ] ],
+		[ [ "pipe", 2 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "crux_plasma_autorifle",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "fabrication",
+	"proficiencies":
+	[
+		{ "proficiency": "prof_plasticworking" },
+		{ "proficiency": "prof_plasma_weapon" },
+		{ "proficiency": "prof_gunsmithing_basic" }
+	],
+	"skills_required":
+		[
+		["fabrication", 7],
+		["chemistry", 7],
+		["rifle", 4 ]
+		],
+	"difficulty": 5,
+	"time": "45 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_plasma_book", 6 ] ],
+	"autolearn": false,
+	"using": [ [ "soldering_standard", 20 ], [ "surface_heat", 100 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 15 ] ],
+		[ [ "power_supply", 3 ] ],
+		[ [ "plastic_chunk", 12 ] ],
+		[ [ "circuit", 3 ] ],
+		[ [ "e_scrap", 12 ] ],
+		[ [ "amplifier", 3 ] ],
+		[ [ "spring", 1 ] ],
+		[ [ "steel_chunk", 7 ], [ "scrap", 21 ] ],
+		[ [ "pipe", 1 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "crux_plasma_carbine",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "fabrication",
+	"skills_required":
+		[
+		["fabrication", 7],
+		["chemistry", 7],
+		["rifle", 4 ]
+		],
+	"difficulty": 5,
+	"time": "45 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_plasma_book", 6 ] ],
+	"autolearn": false,
+	"using": [ [ "soldering_standard", 20 ], [ "surface_heat", 100 ] ],
+	"proficiencies":
+	[
+		{ "proficiency": "prof_plasticworking" },
+		{ "proficiency": "prof_plasma_weapon" },
+		{ "proficiency": "prof_gunsmithing_basic" }
+	],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 10 ] ],
+		[ [ "power_supply", 2 ] ],
+		[ [ "plastic_chunk", 9 ] ],
+		[ [ "circuit", 2 ] ],
+		[ [ "e_scrap", 9 ] ],
+		[ [ "amplifier", 2 ] ],
+		[ [ "spring", 1 ] ],
+		[ [ "steel_chunk", 6 ], [ "scrap", 18 ] ],
+		[ [ "pipe", 1 ] ]
+		]
+},
+{	"type": "recipe",
+	"result": "crux_plasma_pistol",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "fabrication",
+	"skills_required":
+		[
+		["fabrication", 7],
+		["chemistry", 7],
+		["pistol", 4 ]
+		],
+	"difficulty": 5,
+	"time": "45 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_plasma_book", 6 ] ],
+	"autolearn": false,
+	"using": [ [ "soldering_standard", 20 ], [ "surface_heat", 100 ] ],
+	"proficiencies":
+	[
+		{ "proficiency": "prof_plasticworking" },
+		{ "proficiency": "prof_plasma_weapon" },
+		{ "proficiency": "prof_gunsmithing_basic" }
+	],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 5 ] ],
+		[ [ "power_supply", 1 ] ],
+		[ [ "plastic_chunk", 8 ] ],
+		[ [ "circuit", 1 ] ],
+		[ [ "e_scrap", 8 ] ],
+		[ [ "amplifier", 1 ] ],
+		[ [ "spring", 1 ] ],
+		[ [ "steel_chunk", 5 ], [ "scrap", 15 ] ],
+		[ [ "pipe", 1 ] ]
+		]
+},
+{	"type": "recipe",
+	"result": "crux_underslung_plasma",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "fabrication",
+	"skills_required":
+		[
+		["fabrication", 7],
+		["chemistry", 7],
+		["rifle", 4 ]
+		],
+	"difficulty": 5,
+	"time": "45 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_plasma_book", 6 ] ],
+	"autolearn": false,
+	"using": [ [ "soldering_standard", 20 ], [ "surface_heat", 100 ] ],
+	"proficiencies":
+	[
+		{ "proficiency": "prof_plasticworking" },
+		{ "proficiency": "prof_plasma_weapon" },
+		{ "proficiency": "prof_gunsmithing_basic" }
+	],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 5 ] ],
+		[ [ "power_supply", 1 ] ],
+		[ [ "plastic_chunk", 8 ] ],
+		[ [ "circuit", 1 ] ],
+		[ [ "e_scrap", 8 ] ],
+		[ [ "amplifier", 1 ] ],
+		[ [ "spring", 1 ] ],
+		[ [ "steel_chunk", 5 ], [ "scrap", 15 ] ],
+		[ [ "pipe", 1 ] ]
+		]
+},
+{
+	"type": "recipe",
+	"result": "crux_plasma_cannon",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "fabrication",
+	"skills_required":
+		[
+		["fabrication", 7],
+		["chemistry", 7],
+		["mechanics", 4 ]
+		],
+	"difficulty": 5,
+	"time": "45 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_plasma_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies":
+	[
+		{ "proficiency": "prof_plasticworking" },
+		{ "proficiency": "prof_plasma_weapon" },
+		{ "proficiency": "prof_gunsmithing_basic" }
+	],
+	"using": [ [ "soldering_standard", 20 ], [ "surface_heat", 100 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 25 ] ],
+		[ [ "power_supply", 5 ] ],
+		[ [ "plastic_chunk", 20 ] ],
+		[ [ "circuit", 6 ] ],
+		[ [ "e_scrap", 20 ] ],
+		[ [ "amplifier", 6 ] ],
+		[ [ "spring", 2 ] ],
+		[ [ "steel_chunk", 10 ], [ "scrap", 30 ] ],
+		[ [ "pipe", 8 ] ]
+		]
+},
+{	"type": "recipe",
+	"result": "crux_plasma_smg",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_RANGED",
+	"skill_used": "fabrication",
+	"skills_required":
+		[
+		["fabrication", 7],
+		["chemistry", 7],
+		["smg", 4 ]
+		],
+	"difficulty": 5,
+	"time": "45 m",
+	"reversible": true,
+	"book_learn": [ [ "crux_plasma_book", 6 ] ],
+	"autolearn": false,
+	"proficiencies":
+	[
+		{ "proficiency": "prof_plasticworking" },
+		{ "proficiency": "prof_plasma_weapon" },
+		{ "proficiency": "prof_gunsmithing_basic" }
+	],
+	"using": [ [ "soldering_standard", 20 ], [ "surface_heat", 100 ] ],
+	"qualities":
+	[
+		{ "id": "SCREW", "level": 1 },
+		{ "id": "SCREW_FINE", "level": 1},
+		{ "id": "HAMMER_FINE", "level": 1 },
+		{ "id": "WRENCH_FINE", "level": 1 },
+		{ "id": "CHISEL", "level": 3 }
+	],
+	"components":
+		[
+		[ [ "cable", 5 ] ],
+		[ [ "power_supply", 1 ] ],
+		[ [ "plastic_chunk", 8 ] ],
+		[ [ "circuit", 1 ] ],
+		[ [ "e_scrap", 8 ] ],
+		[ [ "amplifier", 1 ] ],
+		[ [ "spring", 1 ] ],
+		[ [ "steel_chunk", 5 ], [ "scrap", 15 ] ],
+		[ [ "pipe", 1 ] ]
+		]
+},
+{
+	"result": "plasma_bandolier",
+	"type": "recipe",
+	"category": "CC_ARMOR",
+	"subcategory": "CSC_ARMOR_STORAGE",
+	"skill_used": "tailor",
+	"difficulty": 3,
+	"skills_required": [ "gun", 1 ],
+	"time": "1 h 18 m",
+	"autolearn": true,
+	"proficiencies": [ { "proficiency": "prof_closures" }, { "proficiency": "prof_leatherworking_basic" } ],
+	"qualities": [ { "id": "SEW", "level": 1 } ],
+	"components": [ [ [ "leather", 4 ], [ "rag", 4 ] ], [ [ "filament", 5, "LIST" ] ] ]
+},
+{
+	"result": "plasma_leg_bandolier",
+	"type": "recipe",
+	"category": "CC_ARMOR",
+	"subcategory": "CSC_ARMOR_STORAGE",
+	"skill_used": "tailor",
+	"difficulty": 3,
+	"skills_required": [ "gun", 1 ],
+	"time": "1 h 16 m",
+	"proficiencies": [ { "proficiency": "prof_closures" }, { "proficiency": "prof_leatherworking_basic" } ],
+	"qualities": [ { "id": "SEW", "level": 1 } ],
+	"components": [ [ [ "leather", 6 ], [ "rag", 6 ] ], [ [ "chestpouch", 2 ] ], [ [ "filament", 8, "LIST" ] ] ]
+},
+{
+	"result": "plasma_recycler",
+	"type": "recipe",
+	"category": "CC_WEAPON",
+	"subcategory": "CSC_WEAPON_MAGAZINES",
+	"skill_used": "fabrication",
+	"difficulty": 3,
+	"time": "10 m",
+	"decomp_learn": 2,
+	"book_learn": [ [ "crux_laser_book", 2 ] ],
+	"autolearn": false,
+	"proficiencies": [ { "proficiency": "prof_elec_soldering" }, { "proficiency": "prof_plasticworking"} ],
+	"using": [ [ "soldering_standard", 10 ], [ "surface_heat", 50 ] ],
+	"qualities": [ { "id": "SCREW", "level": 1 }, {"id": "SCREW_FINE", "level": 1} ],
+	"tools": [ [ [ "mold_plastic", -1 ] ] ],
+	"components":
+	[ [ [ "plastic_chunk", 16 ] ] ]
+}
+]

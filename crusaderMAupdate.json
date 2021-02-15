@@ -1,0 +1,9 @@
+[
+{
+	"id": "style_krav_maga",
+	"copy-from": "style_krav_maga",
+	"type": "martial_art",
+	"name": { "str": "Krav Maga" },
+	"extend": { "weapons": ["crux_laser_rifle", "crux_laser_carbine", "crux_laser_pistol", "crux_plasma_autorifle", "crux_plasma_carbine", "crux_plasma_pistol"] }
+}
+]

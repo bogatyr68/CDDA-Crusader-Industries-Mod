@@ -1,0 +1,45 @@
+[
+{
+	"id": "plasma_bandolier",
+	"type": "ARMOR",
+	"name": { "str": "plasma bandolier" },
+	"description": "This is a handy bandolier to keep eight hybrid plasma charges ready. It would be easier if they weren't the size of soda cans.",
+	"weight": "490 g",
+	"volume": "1000 ml",
+	"price": 1000,
+	"price_postapoc": 1000,
+	"to_hit": 1,
+	"bashing": 1,
+	"material": [ "leather" ],
+	"symbol": "[",
+	"looks_like": "leather_pouch",
+	"color": "brown",
+	"covers": [ "torso" ],
+	"coverage": 10,
+	"encumbrance": 5,
+	"material_thickness": 1,
+	"pocket_data":
+	[ {"ammo_restriction": {"hybrid_plasma": 8}, "moves": 20} ],
+	"flags": [ "BELTED", "OVERSIZE", "WATER_FRIENDLY" ]
+},
+{
+	"type": "ARMOR",
+	"id": "plasma_leg_bandolier",
+	"name": { "str": "leg plasma bandolier" },
+	"description": "This is a bandolier wrapped around a leg to keep two hybrid plasma charges ready when needed.",
+	"weight": "120 g",
+	"volume": "250 ml",
+	"price": 2000,
+	"price_postapoc": 1000,
+	"material": [ "leather" ],
+	"symbol": "[",
+	"looks_like": "ammo_satchel",
+	"color": "dark_gray",
+	"covers": [ "leg_l", "leg_r" ],
+	"sided": true,
+	"coverage": 15,
+	"material_thickness": 2,
+	"pocket_data": [{"ammo_restriction": {"hybrid_plasma": 2}, "moves": 20}],
+	"flags": [ "BELTED", "WATER_FRIENDLY" ]
+}
+]

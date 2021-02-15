@@ -1,0 +1,22 @@
+[
+{
+	"type": "proficiency",
+	"id": "prof_plasma_weapon",
+	"name": { "str": "Weaponized Plasma Theory" },
+	"description": "This is a functional understanding of the operation, maintanance, and possibly fabrication of plasma-based weapons.",
+	"can_learn": true,
+	"default_time_multiplier": 2.5,
+	"default_fail_multiplier": 3,
+	"time_to_learn": "10 h"
+},
+{
+	"type": "proficiency",
+	"id": "prof_laser_weapon",
+	"name": { "str": "Particle Beam Theory" },
+	"description": "This is an understanding of how photons and light can be weaponized in cohesive beams.",
+	"can_learn": true,
+	"default_time_multiplier": 2.5,
+	"default_fail_multiplier": 3,
+	"time_to_learn": "10 h"
+}
+]

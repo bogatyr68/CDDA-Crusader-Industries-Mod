@@ -1,0 +1,42 @@
+[
+{
+	"id": "crux_laser_book",
+	"type": "BOOK",
+	"name": { "str": "CRUX Prototype Lasers", "str_pl": "copies of CRUX Prototype Lasers" },
+	"description": "The weapons company Crusader Industries--CRUX--operated out of Germany only a few years before the Cataclysm, and thus most of their prototypes were never built. With this book, perhaps you can change that.",
+	"weight": "2063 g",
+	"volume": "2 L",
+	"price": 9200,
+	"price_postapoc": 750,
+	"bashing": 8,
+	"material": [ "paper" ],
+	"symbol": "?",
+	"color": "blue",
+	"skill": "electronics",
+	"required_level": 5,
+	"max_level": 10,
+	"intelligence": 13,
+	"time": "55 m",
+	"fun": -1
+},
+{
+	"id": "crux_plasma_book",
+	"type": "BOOK",
+	"name": { "str": "CRUX Hybrid Plasma Theory", "str_pl": "copies of CRUX Hybrid Plasma Theory" },
+	"description": "Crusader Industries not only attempted to weaponize plasma, but this book details their attempts at forming some sort of hybrid with lasers and conventional projectiles.",
+	"weight": "2063 g",
+	"volume": "2 L",
+	"price": 9200,
+	"price_postapoc": 750,
+	"bashing": 8,
+	"material": [ "paper" ],
+	"symbol": "?",
+	"color": "blue",
+	"skill": "chemistry",
+	"required_level": 5,
+	"max_level": 10,
+	"intelligence": 13,
+	"time": "55 m",
+	"fun": -1
+}
+]
